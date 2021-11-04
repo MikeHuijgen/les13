@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MysteryFun</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="fun.js"></script>
+	</head>
+	<body style= "background-color:black">
+		<div>
+			<input type="button" style=" background-color: orange;" onclick="window.location.href='index.html'" value="Back" id="btn1" /> 
+		</div><br>
+		<div>
+			<input type="button" style=" background-color: orange; visibility: visible;" onclick="changebackground()" value="Surprise 1" id="btn2" /> 
+		</div>
+		<div>
+			<input type="button" style=" background-color: orange; visibility: hidden;" onclick="(showimg())" value="Surprise 2" id="btn3" /> 
+		</div>
+		<div>
+			<input type="button" style=" background-color: orange; visibility: hidden;" onclick="hide()" value="Surprise 3" id="btn4" /> 
+		</div>
+		<div>
+			<h1 id="text1">BOOOOOOOO!!!!!</h1>
+		</div>
+		
+		<img id="scary2" src="Scary2.jpg" width="200px" height="200px">
+		<img id="LoadingImage" src="Death.jpg" width="250px" height="250px" style="visibility: hidden;">
+		<div class="center">
+			<input type="button" class="button" style=" background-color: orange; visibility: hidden;" onclick="skeleton()" value="Last Surprise" id="btn5" /> 
+			<img id="skeletongif" src="spookyskeleton.gif" width="400px" height=" 400px" style="visibility: hidden;">
+			<audio id="skeletonsound" src="skeletonsound.mp3" preload="auto"></audio>
+		</div>
+	</body>		
+</html>

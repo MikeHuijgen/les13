@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		
+		<style>
+		p {
+			line-height:normal;
+			margin:0px;
+		}
+		</style>
+		<script language="javascript">  
+			function change()
+			{
+				if(document.body.style.background == "lightcoral")
+				{
+					darkMode()
+				}
+				else if(document.body.style.background == "black")
+				{
+					lightMode()
+				}
+			}
+			function lightMode()
+			{
+				document.getElementById('btn1').style.backgroundColor='white';  
+				document.body.style.background = "lightcoral"
+				document.body.style.color = "black"
+				
+			}
+			function darkMode()  
+			{  
+				document.getElementById('btn1').style.backgroundColor='white';   
+				document.body.style.background = "black"
+				document.body.style.color = "lightgrey"
+				
+			}  
+	   </script>  
+	</head>
+	<body style = "background: lightcoral;">
+		<div>
+			<h1>Content</h1>
+				<p>Dit zijn mijn projecten en de links naar de resultaten</p>
+		</div>
+		
+		<div>
+			<h1>Menu</h1>
+				<a href="https://28881.hosts1.ma-cloud.nl/goodweb/HTMLcheatsheet.html">My git cheatsheet</a><br><br>
+				<a href="https://github.com/MikeHuijgen">My github</a><br><br>
+				<a href="https://github.com/MikeHuijgen/PYTAchievements">My Python achievements</a><br><br>
+				<a href="https://28881.hosts1.ma-cloud.nl/goodweb/mysteryfun.html">My mystryfun site</a>
+
+		</div>
+			<h2>Druk voor darkmode :)</h2>
+			<div>
+				<input type="button" onclick="change()" value="Dark/Light" id="btn1" />  
+			</div>
+		</div>
+	</body>
+</html>
